@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeux</title>
+	<style>
+		body {
+			background-image: url("/backgroud.jpg");
+			background-size: cover;
+			background-position: center center;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+			color: white;
+			position: absolute;
+			top: 10%;
+		}
+		.jeux {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		.jeux a {
+			margin: 1rem;
+		}
+		.jeux img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			object-position: center center;
+			border-radius: 50%;
+			transition: transform 0.3s ease-in-out;
+		}
+		.jeux img:hover {
+			transform: scale(1.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Choisissez un jeu</h1>
+		<div class="jeux">
+			<a href="http://192.168.49.2:32152/">
+                        <img src="jeu1.jpg" alt="Jeu 1" width="200" height="200">
+	                </a>
+        	        <a href="http://192.168.49.2:31240/">
+                        <img src="jeux2.jpg" alt="Jeu 2" width="200" height="200">
+                	</a>
+                	<a href="http://192.168.49.2:32185/">
+                        <img src="jeu3.jpg" alt="Jeu 3" width="200" height="200">
+			</a>	
+		</div>
+	</div>
+</body>
+</html>
